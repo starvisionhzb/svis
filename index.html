@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Vision - High-Speed Internet Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f2f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0d47a1;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease-out;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffd600;
+    }
+    #hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    #hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: floatText 3s infinite ease-in-out;
+    }
+    .cta-button {
+      background: #ffd600;
+      color: #0d47a1;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      border-radius: 5px;
+      animation: pulse 2s infinite;
+    }
+    .cta-button:hover {
+      background: #ffea00;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .service-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .service-box:hover {
+      transform: translateY(-10px);
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      display: block;
+      margin: 2rem auto 0;
+    }
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Star Vision</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Experience Lightning-Fast Internet with Star Vision</h1>
+    <p>Connecting you to the world at the speed of light.</p>
+    <a href="#plans" class="cta-button">View Plans</a>
+  </section>
+
+  <section id="about">
+    <h2>About Star Vision</h2>
+    <p style="text-align:center; max-width: 800px; margin:auto;">Star Vision is committed to providing top-tier internet services, ensuring seamless connectivity for homes and businesses alike. We empower users with reliable, high-speed connections backed by the latest technology in networking and security systems.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>Fiber Internet</h3>
+        <p>Enjoy lightning-fast, reliable broadband over fiber infrastructure.</p>
+      </div>
+      <div class="service-box">
+        <h3>Wi-Fi Networking</h3>
+        <p>Complete Wi-Fi solutions for homes, offices, and commercial buildings.</p>
+      </div>
+      <div class="service-box">
+        <h3>Security Systems</h3>
+        <p>Advanced CCTV, smart alarms, and access control systems.</p>
+      </div>
+      <div class="service-box">
+        <h3>Solar & IoT</h3>
+        <p>Smart IoT setups and solar integration for energy-efficient systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <h2>Our Clients</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>NTPC Ltd.</h3>
+        <p>Connected all substations with fiber optic solutions, ensuring seamless and secure communication infrastructure.</p>
+      </div>
+      <div class="service-box">
+        <h3>BTL EPC Pvt. Ltd.</h3>
+        <p>Delivered comprehensive security systems and high-speed internet solutions across project sites.</p>
+      </div>
+      <div class="service-box">
+        <h3>Bharat Coking Coal Limited (BCCL)</h3>
+        <p>Installed surveillance and communication systems to boost operational security and connectivity in mining zones.</p>
+      </div>
+      <div class="service-box">
+        <h3>Jharkhand Bijli Vitran Nigam Ltd. (JBVNL)</h3>
+        <p>Provided structured cabling and internet support for administrative and operational efficiency.</p>
+      </div>
+      <div class="service-box">
+        <h3>South Eastern Railway</h3>
+        <p>Supported fiber-based networking for uninterrupted and secure railway communication systems.</p>
+      </div>
+      <div class="service-box">
+        <h3>Jharkhand Police Department</h3>
+        <p>Enabled real-time surveillance and monitoring with robust security infrastructure in sensitive areas.</p>
+      </div>
+      <div class="service-box">
+        <h3>ONGC</h3>
+        <p>Established secure, high-speed communication systems and fiber optic connectivity for critical operations.</p>
+      </div>
+      <div class="service-box">
+        <h3>Sarvottam Construction</h3>
+        <p>Provided internet and networking infrastructure for efficient project site communication and administration.</p>
+      </div>
+      <div class="service-box">
+        <h3>Jharkhand State Food Corporation</h3>
+        <p>Set up centralized surveillance and secure data network systems at distribution centers and warehouses.</p>
+      </div>
+      <div class="service-box">
+        <h3>District Collectorate Hazaribagh</h3>
+        <p>Installed integrated security and internet systems to facilitate streamlined administrative operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Company:</strong> Star Vision IT Solutions</p>
+      <p><strong>Contact Number:</strong> 7481017283</p>
+      <p><strong>Address:</strong> Matwari, Hazaribagh - 825301, Jharkhand</p>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.969462369031!2d85.36870451534598!3d23.994892584478207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f49dc7d27d2707%3A0xa2f471e1ceea5e99!2sStar%20Vision%20IT%20solutions%2C%20Matwari%20chowk%2C%20Hazaribagh%2C%20Jharkhand%20825301!5e0!3m2!1sen!2sin!4v1717177171717!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Star Vision. Empowering Digital India.</p>
+  </footer>
+</body>
+</html>
